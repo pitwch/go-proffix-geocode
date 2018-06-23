@@ -18,7 +18,10 @@ func main() {
 	// Read Adresses from PROFFIX with non-set Long / Lat
 	results, err := Adresses.GetEmptyAdresses()
 
-	if err != nil {
+	if len(results) < 1 {
+		log.Println("All adresses are already geocoded")
+	} else if
+	err != nil {
 		log.Println(err)
 
 
@@ -26,7 +29,7 @@ func main() {
 
 	// Batch Geocode Adresses from PROFFIX
 
-	x := geocode.GeocodeAdressesMapquest(results)
+	x := geocode.GeocodeAdressesGoogle(results)
 
 	for _,y := range x {
 		adressnr,err := Adresses.UpdateEmptyAdresses(y)
