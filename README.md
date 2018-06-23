@@ -30,3 +30,15 @@ Beispiel:
 
 ```
 
+| Parameter    | Typ    | Bemerkung                                                              |
+|--------------|--------|------------------------------------------------------------------------|
+| Username     | string | Benutzername SQL - Server                                              |
+| Password     | string | Passwort SQL - Server                                                  |
+| Database     | string | PROFFIX Datenbank                                                      |
+| Hostname     | string | Hostname des SQL - Servers; kann auch IP sein                          |
+| Port         | int    | Port des SQL Servers                                                   |
+| Parameter    | string | Div. Parameter für SQL-Server                                          |
+| UseGeocoder  | string | "Google" / "Mapquest" ; legt fest mit welchem Provider gearbeitet wird |
+| MapQuestAPI  | string | API - Key für Mapquest                                                 |
+| GoogleAPIKey | string | API - Key für Google                                                   |
+
