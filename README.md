@@ -11,7 +11,7 @@ Sämtliche Konfiguration erfolgt über eine **config.json** welche sich im selbe
 
 Beispiel:
 
-
+```json
 {
   "Database": {
     "Username": "sa",
@@ -28,4 +28,5 @@ Beispiel:
   }
 }
 
+```
 
