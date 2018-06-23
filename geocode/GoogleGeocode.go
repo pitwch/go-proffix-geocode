@@ -27,7 +27,7 @@ func GeocodeAdressesGoogle(adresses []Adresses.Adresses) (g []Adresses.Geocoded)
 		location, err := geocoder.Geocoding(address)
 
 		if err != nil {
-			log.Println("Could not get the location: ", err)
+			log.Println("Could not get the location for AdressNr "+cast.ToString(y.Adressnr), err)
 		} else {
 			g = append(g, Adresses.Geocoded{y.Adressnr, cast.ToString(location.Longitude), cast.ToString(location.Latitude)})
 
