@@ -7,11 +7,9 @@
     "Port": 1433,
     "Parameter": "?connection+timeout=30"
   },
-  "Geocoder": "Google",
-  "MapQuest": {
-    "APIKey": ""
-  },
-  "Google": {
-    "APIKey": ""
+  "Settings": {
+    "UseGeocoder": "Google",
+    "MapQuestAPIKey": "",
+    "GoogleAPIKey": ""
   }
 }

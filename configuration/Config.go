@@ -5,17 +5,13 @@ import (
 	"os"
 	"fmt"
 	"encoding/json"
+	"go-proffix-geocode/geocode"
 )
 
 type Configuration struct {
 	Database database.Database
-	Google   MapQuest
+	Settings geocode.Settings
 }
-
-type MapQuest struct {
-	APIKey string
-}
-
 
 // Read Config from config.json
 func Config() {
@@ -31,4 +27,5 @@ func Config() {
 	}
 
 	database.Connect(configuration.Database)
+	geocode.SetSettings(configuration.Settings)
 }

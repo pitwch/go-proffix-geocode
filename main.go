@@ -5,7 +5,6 @@ import (
 	"go-proffix-geocode/configuration"
 	"go-proffix-geocode/geocode"
 	"go-proffix-geocode/adresses"
-	"github.com/spf13/cast"
 )
 
 
@@ -29,17 +28,10 @@ func main() {
 
 	// Batch Geocode Adresses from PROFFIX
 
-	x := geocode.GeocodeAdressesGoogle(results)
 
-	for _,y := range x {
-		adressnr,err := Adresses.UpdateEmptyAdresses(y)
-
-		// If Error -> Log
-		if err != nil {
-			log.Println(err)
-		}
-
-		log.Println("Successfully geocoded PROFFIX AdressNr "+cast.ToString(adressnr))
-	}
+	geocode.GeocodeAdresses(results)
 
 }
+
+
+

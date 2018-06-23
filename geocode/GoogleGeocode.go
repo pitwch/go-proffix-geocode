@@ -4,7 +4,7 @@ import (
 	"go-proffix-geocode/adresses"
 	"github.com/spf13/cast"
 	"github.com/kelvins/geocoder"
-	"fmt"
+	"log"
 )
 
 
@@ -13,8 +13,11 @@ import (
 
 func GeocodeAdressesGoogle(adresses []Adresses.Adresses) (g []Adresses.Geocoded) {
 
-	for _, y := range adresses {
+	// Set the API Key from Config
 
+	geocoder.ApiKey = settings.GoogleAPIKey
+
+	for _, y := range adresses {
 	address := geocoder.Address{
 		Street:  y.Street.String,
 		City:    y.City.String,
@@ -24,7 +27,7 @@ func GeocodeAdressesGoogle(adresses []Adresses.Adresses) (g []Adresses.Geocoded)
 		location, err := geocoder.Geocoding(address)
 
 		if err != nil {
-			fmt.Println("Could not get the location: ", err)
+			log.Println("Could not get the location: ", err)
 		} else {
 			g = append(g, Adresses.Geocoded{y.Adressnr, cast.ToString(location.Longitude), cast.ToString(location.Latitude)})
 
