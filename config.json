@@ -1,0 +1,13 @@
+{
+  "Database": {
+      "Username": "sa",
+      "Password": "",
+      "Database": "",
+      "Hostname": "",
+      "Port": 1433,
+      "Parameter": "?connection+timeout=30"
+  },
+  "MapQuest": {
+    "APIKey": ""
+  }
+}
