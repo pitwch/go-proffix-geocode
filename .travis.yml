@@ -5,10 +5,12 @@ go:
   - 1.10
   - tip
 
-install:
+before_install:
+ - go get github.com/modocache/gover
  - go get golang.org/x/tools/cmd/cover
  - go get github.com/mattn/goveralls
  
 script:
-  - go test -covermode=count -coverprofile=coverage.out
-  - $HOME/gopath/bin/goveralls -coverprofile=coverage.out -service=travis-ci
+  - go test ./... -covermode=count -coverprofile=coverage.out
+  - gover
+  - $HOME/gopath/bin/goveralls -coverprofile=gover.coverprofile -service=travis-ci
