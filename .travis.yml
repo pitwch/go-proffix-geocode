@@ -13,6 +13,6 @@ install:
 - go get golang.org/x/tools/cmd/cover
  
 script:
-  - go test ./... -covermode=count -coverprofile=coverage.out
+  - go test ./... -covermode=count
   - gover
   - $HOME/gopath/bin/goveralls -coverprofile=gover.coverprofile -service=travis-ci
