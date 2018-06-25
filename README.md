@@ -43,7 +43,18 @@ Beispiel:
 | Parameter    | string | Div. Parameter für SQL-Server                                          |
 | UseGeocoder  | string | "Google" / "Mapquest" ; legt fest mit welchem Provider gearbeitet wird |
 | MapQuestAPI  | string | API - Key für Mapquest                                                 |
-| GoogleAPIKey | string | API - Key für Google                                                   |
+| GoogleAPIKey | string | API - Key für Google (empfohlen)                                       |
+
+
+### API - Key ###
+
+Sowohl für das Geocodieren über Google als auch über Mapquest **wird ein API - Key benötigt**. Diesen erhält man wie folgt:
+**Google (empfohlen):** [https://developers.google.com/maps/documentation/geocoding/get-api-key](https://developers.google.com/maps/documentation/geocoding/get-api-key)
+**Mapquest:** [https://developer.mapquest.com/documentation/](https://developer.mapquest.com/documentation/)
+
+
+Die entsprechenden Lizenzbedingungen beachten!
+(Im Falle von [pApp - dem App für PROFFIX](https://www.proffixapp.ch) ist alles ok)
 
 
 ## Verwendung
