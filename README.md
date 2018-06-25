@@ -8,6 +8,8 @@ Mit diesem Tool können Adressen aus PROFFIX automatisch geocodiert werden.
 Das Tool liest sämtliche Adressen ohne Longitude / Latitude, geocodiert diese wahlweise über Google oder Mapquest
 und schreibt die Longitude / Latitude Werte zurück in die Datenbank.
 
+![alt text](https://raw.githubusercontent.com/pitwch/go-proffix-geocode/master/assets/img/geocode_proffix_papp.jpg "Beispiel Verwendung mit pApp")
+
 ## Konfiguration
 
 Sämtliche Konfiguration erfolgt über eine **config.json** welche sich **im selben Verzeichnis wie das Tool** befinden muss.
