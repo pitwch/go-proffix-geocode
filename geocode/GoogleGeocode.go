@@ -11,7 +11,7 @@ import (
 
 // Geocode PROFFIX Adressen with Google
 
-func GeocodeAdressesGoogle(adresses []Adresses.Adresses) (g []Adresses.Geocoded) {
+func GeocodeAdressesGoogle(adresses []Adresses.Adressstruct) (g []Adresses.Geocoded) {
 
 	// Set the API Key from Config
 

@@ -18,7 +18,7 @@ var settings Settings
 func SetSettings(s Settings){
 	settings = s
 }
-func GeocodeAdresses (adresses []Adresses.Adresses){
+func GeocodeAdresses (adresses []Adresses.Adressstruct){
 
 	var r []Adresses.Geocoded
 	var err error
