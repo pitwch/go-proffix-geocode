@@ -61,6 +61,11 @@ Die entsprechenden Lizenzbedingungen beachten!
 
 ## Verwendung
 
+Die aktuellste Version des Tools findet sich immer unter [https://github.com/pitwch/go-proffix-geocode/releases/latest](Releases).
+Alternativ kann das [https://github.com/pitwch/go-proffix-geocode/files/2132369/go-proffix-geocode.zip](ZIP-File hier direkt heruntergeladen) werden.
+
+Dann das ZIP-File entpacken sowie die config.json editieren und API-Keys besorgen.
+
 Das Tool kann anschliessen in Windows per CMD ausgeführt werden:
 
 ![alt text](https://raw.githubusercontent.com/pitwch/go-proffix-geocode/master/assets/img/cmd_geocode.jpg "Kommandozeile PROFFIX geocodieren")
