@@ -2,9 +2,9 @@ package main
 
 import (
 	"log"
-	"go-proffix-geocode/configuration"
-	"go-proffix-geocode/geocode"
-	"go-proffix-geocode/adresses"
+	"github.com/pitwch/go-proffix-geocode/configuration"
+	"github.com/pitwch/go-proffix-geocode/geocode"
+	"github.com/pitwch/go-proffix-geocode/adresses"
 )
 
 
