@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/pitwch/go-proffix-geocode.svg?branch=master)](https://travis-ci.org/pitwch/go-proffix-geocode)
+[![Coverage Status](https://coveralls.io/repos/github/pitwch/go-proffix-geocode/badge.svg?branch=master)](https://coveralls.io/github/pitwch/go-proffix-geocode?branch=master)
+
 # Geocode PROFFIX Adressen
 
 Mit diesem Tool können Adressen aus PROFFIX automatisch geocodiert werden.
