@@ -18,5 +18,5 @@ before_script:
   - go install ./vendor/github.com/golangci/golangci-lint/cmd/golangci-lint
 
 script:
-  - golangci-lint run
+#  - golangci-lint run
   - go test -v -race ./...
