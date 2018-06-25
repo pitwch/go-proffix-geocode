@@ -49,7 +49,9 @@ Beispiel:
 ### API - Key ###
 
 Sowohl für das Geocodieren über Google als auch über Mapquest **wird ein API - Key benötigt**. Diesen erhält man wie folgt:
+
 **Google (empfohlen):** [https://developers.google.com/maps/documentation/geocoding/get-api-key](https://developers.google.com/maps/documentation/geocoding/get-api-key)
+
 **Mapquest:** [https://developer.mapquest.com/documentation/](https://developer.mapquest.com/documentation/)
 
 
