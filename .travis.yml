@@ -1,8 +1,18 @@
 language: go
 sudo: false
 go:
+  - 1.8
+  - 1.10
   - tip
+
 before_install:
-  - go get github.com/mattn/goveralls
+ - go get github.com/modocache/gover
+ - go get github.com/mattn/goveralls
+ 
+install:
+- go get golang.org/x/tools/cmd/cover
+ 
 script:
-  - $GOPATH/bin/goveralls -service=travis-c
+  - go test ./... -covermode=count -coverprofile=coverage.out
+  - gover
+  - $HOME/gopath/bin/goveralls -coverprofile=gover.coverprofile -service=travis-ci
