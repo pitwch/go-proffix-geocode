@@ -1,22 +1,14 @@
-sudo: false
-
 language: go
 
 go:
-  - 1.9.x
-  - 1.x
+  - 1.8
+  - 1.10
+  - tip
 
-git:
-  depth: 1
-
-install: true
-
-notifications:
-  email: false
-
-before_script:
-  - go install ./vendor/github.com/golangci/golangci-lint/cmd/golangci-lint
+install:
+ - go get golang.org/x/tools/cmd/cover
+ - go get github.com/mattn/goveralls
 
 script:
-#  - golangci-lint run
-  - go test -v -race ./...
+  - go test -covermode=count -coverprofile=coverage.out
+  - $HOME/gopath/bin/goveralls -coverprofile=coverage.out -service=travis-ci
