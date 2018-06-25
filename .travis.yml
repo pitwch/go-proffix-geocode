@@ -1,22 +1,8 @@
-sudo: false
-
 language: go
-
+sudo: false
 go:
-  - 1.9.x
-  - 1.x
-
-git:
-  depth: 1
-
-install: true
-
-notifications:
-  email: false
-
-before_script:
-  - go install ./vendor/github.com/golangci/golangci-lint/cmd/golangci-lint
-
+  - tip
+before_install:
+  - go get github.com/mattn/goveralls
 script:
-  - golangci-lint run
-  - go test -v -race ./...
+  - $GOPATH/bin/goveralls -service=travis-c
