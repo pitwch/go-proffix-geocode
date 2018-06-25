@@ -1,7 +1,7 @@
 package geocode
 
 import (
-	"go-proffix-geocode/adresses"
+	"github.com/pitwch/go-proffix-geocode/adresses"
 	"github.com/jasonwinn/geocoder"
 	"log"
 	"github.com/spf13/cast"

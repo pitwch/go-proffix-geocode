@@ -2,9 +2,9 @@ package test
 
 import (
 	"testing"
-	"go-proffix-geocode/adresses"
+	"github.com/pitwch/go-proffix-geocode/adresses"
 	"database/sql"
-	"go-proffix-geocode/geocode"
+	"github.com/pitwch/go-proffix-geocode/geocode"
 )
 
 func TestGeocodeGoogle(t *testing.T) {

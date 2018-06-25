@@ -1,11 +1,11 @@
 package configuration
 
 import (
-	"go-proffix-geocode/shared"
+	"github.com/pitwch/go-proffix-geocode/shared"
 	"os"
 	"fmt"
 	"encoding/json"
-	"go-proffix-geocode/geocode"
+	"github.com/pitwch/go-proffix-geocode/geocode"
 )
 
 type Configuration struct {

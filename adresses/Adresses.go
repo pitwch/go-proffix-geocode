@@ -3,7 +3,7 @@ package Adresses
 import (
 	"database/sql"
 	"errors"
-	"go-proffix-geocode/shared"
+	"github.com/pitwch/go-proffix-geocode/shared"
 	"github.com/spf13/cast"
 )
 
