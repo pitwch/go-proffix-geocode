@@ -5,9 +5,9 @@ Mit diesem Tool können Adressen aus PROFFIX automatisch geocodiert werden.
 Das Tool liest sämtliche Adressen ohne Longitude / Latitude, geocodiert diese wahlweise über Google oder Mapquest
 und schreibt die Longitude / Latitude Werte zurück in die Datenbank.
 
-## Verwendung
+## Konfiguration
 
-Sämtliche Konfiguration erfolgt über eine **config.json** welche sich im selben Verzeichnis wie das Tool befinden muss.
+Sämtliche Konfiguration erfolgt über eine **config.json** welche sich **im selben Verzeichnis wie das Tool** befinden muss.
 
 Beispiel:
 
@@ -42,3 +42,9 @@ Beispiel:
 | MapQuestAPI  | string | API - Key für Mapquest                                                 |
 | GoogleAPIKey | string | API - Key für Google                                                   |
 
+
+## Verwendung
+
+Das Tool kann anschliessen in Windows per CMD ausgeführt werden:
+
+![alt text](https://raw.githubusercontent.com/pitwch/go-proffix-geocode/master/assets/img/cmd_geocode.jpg "Kommandozeile PROFFIX geocodieren")
