@@ -9,7 +9,7 @@ import (
 )
 
 // Replace German Umlauts as Mapquest API has problems with them
-func replaceUmlauts(s string) (r string) {
+func ReplaceUmlauts(s string) (r string) {
 	var replacer = strings.NewReplacer("ä", "ae", "ö", "oe", "ü", "ue")
 	r = replacer.Replace(s)
 	return r
@@ -23,7 +23,7 @@ func GeocodeAdressesMapquest(adresses []Adresses.Adressstruct) (g []Adresses.Geo
 
 	var Temp []string
 	for _, y := range adresses {
-		temp2 := replaceUmlauts(y.Street.String + " " + y.PLZ.String + " " + y.City.String)
+		temp2 := ReplaceUmlauts(y.Street.String + " " + y.PLZ.String + " " + y.City.String)
 		log.Println(temp2)
 		Temp = append(Temp, temp2)
 	}
