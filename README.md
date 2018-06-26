@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/pitwch/go-proffix-geocode.svg?branch=master)](https://travis-ci.org/pitwch/go-proffix-geocode)
-[![Coverage Status](https://coveralls.io/repos/github/pitwch/go-proffix-geocode/badge.svg?branch=master)](https://coveralls.io/github/pitwch/go-proffix-geocode?branch=master)
+[![codecov](https://codecov.io/gh/pitwch/go-proffix-geocode/branch/master/graph/badge.svg)](https://codecov.io/gh/pitwch/go-proffix-geocode)
 
 # Geocode PROFFIX Adressen
 
