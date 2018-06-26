@@ -16,7 +16,7 @@ func replaceUmlauts(s string) (r string) {
 }
 
 // Geocode PROFFIX Adressen with Mapquest Batch
-func GeocodeAdressesMapquest(adresses []Adresses.Adresses) (g []Adresses.Geocoded) {
+func GeocodeAdressesMapquest(adresses []Adresses.Adressstruct) (g []Adresses.Geocoded) {
 
 	// Set the API Key from Config
 	geocoder.SetAPIKey(settings.MapQuestAPIKey)

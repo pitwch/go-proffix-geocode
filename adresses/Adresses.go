@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/cast"
 )
 
-type Adresses struct {
+type Adressstruct struct {
 	Adressnr  int            `json:"Adressnr" db:"AdressNrADR"`
 	Street    sql.NullString `json:"Strasse" db:"Strasse"`
 	PLZ       sql.NullString `json:"PLZ" db:"PLZ"`
@@ -32,8 +32,8 @@ const (
 )
 
 // Get all Adresses from PROFFIX where Long / Lat is not set and Street, Plz and City are set
-func GetEmptyAdresses() ([]Adresses, error) {
-	var results []Adresses
+func GetEmptyAdresses() ([]Adressstruct, error) {
+	var results []Adressstruct
 
 	err := database.SQL.Select(&results, readQueryAdrAdresse)
 

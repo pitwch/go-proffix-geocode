@@ -1,4 +1,4 @@
-package test
+package geocode
 
 import (
 	"testing"
@@ -8,8 +8,8 @@ import (
 )
 
 func TestGeocodeGoogle(t *testing.T) {
-	testaddresses := []Adresses.Adresses{
-		Adresses.Adresses{
+	testaddresses := []Adresses.Adressstruct{
+		Adresses.Adressstruct{
 			1,
 			sql.NullString{"Murgtalstrasse 20", true},
 			sql.NullString{"9542", true},
@@ -23,8 +23,8 @@ func TestGeocodeGoogle(t *testing.T) {
 }
 
 func TestGeocodeMapquest(t *testing.T) {
-	testaddresses := []Adresses.Adresses{
-		Adresses.Adresses{
+	testaddresses := []Adresses.Adressstruct{
+		Adresses.Adressstruct{
 			1,
 			sql.NullString{"Murgtalstrasse 20", true},
 			sql.NullString{"9542", true},

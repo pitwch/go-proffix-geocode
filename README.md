@@ -5,8 +5,11 @@
 
 Mit diesem Tool können Adressen aus PROFFIX automatisch geocodiert werden.
 
-Das Tool liest sämtliche Adressen ohne Longitude / Latitude, geocodiert diese wahlweise über Google oder Mapquest
-und schreibt die Longitude / Latitude Werte zurück in die Datenbank.
+Das Tool liest sämtliche Adressen ohne Longitude / Latitude aus der angegebenen PROFFIX - Datenbank, geocodiert diese wahlweise über Google oder Mapquest
+und schreibt die Longitude / Latitude Werte zurück in die PROFFIX - Datenbank.
+
+*Beispiel Ergebnis geocodierter PROFFIX - Adressen in [pApp](https://www.proffixapp.ch)*
+![alt text](https://raw.githubusercontent.com/pitwch/go-proffix-geocode/master/assets/img/geocode_proffix_papp.jpg "Beispiel Verwendung mit pApp")
 
 ## Konfiguration
 
@@ -49,7 +52,9 @@ Beispiel:
 ### API - Key ###
 
 Sowohl für das Geocodieren über Google als auch über Mapquest **wird ein API - Key benötigt**. Diesen erhält man wie folgt:
+
 **Google (empfohlen):** [https://developers.google.com/maps/documentation/geocoding/get-api-key](https://developers.google.com/maps/documentation/geocoding/get-api-key)
+
 **Mapquest:** [https://developer.mapquest.com/documentation/](https://developer.mapquest.com/documentation/)
 
 
@@ -59,6 +64,12 @@ Die entsprechenden Lizenzbedingungen beachten!
 
 ## Verwendung
 
-Das Tool kann anschliessen in Windows per CMD ausgeführt werden:
+Die aktuellste Version des Tools findet sich immer unter [Release](https://github.com/pitwch/go-proffix-geocode/releases/latest).
+
+Alternativ kann das [ZIP-File hier direkt heruntergeladen](https://github.com/pitwch/go-proffix-geocode/files/2132369/go-proffix-geocode.zip) werden.
+
+Dann das ZIP-File entpacken, die API-Keys besorgen und die config.json editieren.
+
+Das Tool kann anschliessen in **Windows per CMD ausgeführt** werden:
 
 ![alt text](https://raw.githubusercontent.com/pitwch/go-proffix-geocode/master/assets/img/cmd_geocode.jpg "Kommandozeile PROFFIX geocodieren")
