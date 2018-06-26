@@ -5,6 +5,7 @@ go:
   - tip
 
 before_install:
+  - chmod +x test-coverage.sh
   - go get -t -v ./...
 
 script:
