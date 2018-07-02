@@ -1,4 +1,4 @@
-//go:generate goversioninfo -icon=icon.ico
+//go:generate goversioninfo -icon=icon.ico -manifest=go-proffix-geocode.exe.manifest
 
 package main
 

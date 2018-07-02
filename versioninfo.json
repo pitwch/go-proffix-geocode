@@ -19,7 +19,7 @@
     "FileSubType": "00"
   },
   "StringFileInfo": {
-    "Comments": "",
+    "Comments": "Tool um sämtliche Adressen in PROFFIX automatisch zu geocodieren",
     "CompanyName": "Pedrett IT+Web AG",
     "FileDescription": "Geocode PROFFIX Adressen",
     "FileVersion": "1.1.0.0",
