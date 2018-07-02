@@ -42,13 +42,13 @@ func Config() {
 	decoder := json.NewDecoder(file)
 	err := decoder.Decode(&configuration)
 	if err != nil {
-		log.Println("Error reading Config File: %v", err)
+		log.Printf("Error reading Config File: %v", err)
 		os.Exit(1)
 	}
 
 	// Check for minimal configuration
 	if (configuration.Database.Database == "" || configuration.Database.Password == "" || configuration.Database.Username == "" || configuration.Database.Hostname == "") {
-		log.Println("Please check the config.json. More info available here: https://github.com/pitwch/go-proffix-geocode#konfiguration \n")
+		log.Println("Please check the config.json. More info available here: https://github.com/pitwch/go-proffix-geocode#konfiguration")
 		os.Exit(1)
 	}
 
