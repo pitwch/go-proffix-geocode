@@ -66,7 +66,7 @@ Die entsprechenden Lizenzbedingungen beachten!
 
 Die aktuellste Version des Tools findet sich immer unter [Release](https://github.com/pitwch/go-proffix-geocode/releases/latest).
 
-Alternativ kann das [ZIP-File hier direkt heruntergeladen](https://github.com/pitwch/go-proffix-geocode/files/2132369/go-proffix-geocode.zip) werden.
+Alternativ kann das [ZIP-File hier direkt heruntergeladen](https://github.com/pitwch/go-proffix-geocode/releases/download/1.1/go-proffix-geocode.zip) werden.
 
 Dann das ZIP-File entpacken, die API-Keys besorgen und die config.json editieren.
 
