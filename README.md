@@ -70,6 +70,6 @@ Alternativ kann das [ZIP-File hier direkt heruntergeladen](https://github.com/pi
 
 Dann das ZIP-File entpacken, die API-Keys besorgen und die config.json editieren.
 
-Das Tool kann anschliessen in **Windows per CMD ausgeführt** werden:
+Das Tool kann anschliessen in **Windows per CMD ausgeführt** werden (Nur Doppelklick funktioniert nicht!):
 
 ![alt text](https://raw.githubusercontent.com/pitwch/go-proffix-geocode/master/assets/img/cmd_geocode.jpg "Kommandozeile PROFFIX geocodieren")
