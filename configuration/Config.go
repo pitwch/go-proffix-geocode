@@ -14,6 +14,10 @@ type Configuration struct {
 	Settings geocode.Settings
 }
 
+type ErrorConfig struct {
+	field string
+	error string
+}
 // Read Config from config.json
 func Config() {
 
@@ -43,6 +47,13 @@ func Config() {
 		fmt.Printf("Error reading Config File: %v", err)
 		os.Exit(1)
 	}
+
+	// Check for minimal configuration
+	if (configuration.Database.Database == "" || configuration.Database.Password == "" || configuration.Database.Username == "" || configuration.Database.Hostname == "")  {
+		fmt.Print("Please check the config.json. More info available here: https://github.com/pitwch/go-proffix-geocode#konfiguration \n")
+	os.Exit(1)
+	}
+
 	database.Connect(configuration.Database)
 	geocode.SetSettings(configuration.Settings)
 
