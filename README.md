@@ -38,8 +38,8 @@ Beispiel:
 
 | Parameter    | Typ    | Bemerkung                                                              |
 |--------------|--------|------------------------------------------------------------------------|
-| Username     | string | Benutzername SQL - Server                                              |
-| Password     | string | Passwort SQL - Server                                                  |
+| Username     | string | Benutzername SQL - Server <sup>[1](#single-sign-on)</sup>              |
+| Password     | string | Passwort SQL - Server <sup>[1](#single-sign-on)</sup>                  |
 | Database     | string | PROFFIX Datenbank                                                      |
 | Hostname     | string | Hostname des SQL - Servers; kann auch IP sein                          |
 | Port         | int    | Port des SQL Servers                                                   |
@@ -48,6 +48,8 @@ Beispiel:
 | MapQuestAPI  | string | API - Key für Mapquest                                                 |
 | GoogleAPIKey | string | API - Key für Google (empfohlen)                                       |
 
+
+<a name="single-sign-on">1</a>: Single-Sign-On unter Windows wird unterstützt, d.h. wenn der ausführende Benutzer genügenden **administrative Berechtigungen hat um die PROFFIX Datenbank zu bearbeiten** kann sowohl **Username wie auch Password leer gelassen** werden.
 
 ### API - Key ###
 
