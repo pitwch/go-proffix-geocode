@@ -8,11 +8,9 @@ import (
 	"fmt"
 )
 
-
 var (
 	// SQL wrapper
 	SQL *sqlx.DB
-
 )
 
 type Database struct {

@@ -23,4 +23,3 @@ func TestSetSettings(t *testing.T) {
 //		},
 //	}
 //	GeocodeAdresses(testaddresses)
-

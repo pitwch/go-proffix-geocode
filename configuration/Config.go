@@ -1,12 +1,12 @@
 package configuration
 
 import (
-	"github.com/pitwch/go-proffix-geocode/shared"
-	"os"
 	"encoding/json"
-	"github.com/pitwch/go-proffix-geocode/geocode"
 	"flag"
+	"github.com/pitwch/go-proffix-geocode/geocode"
+	"github.com/pitwch/go-proffix-geocode/shared"
 	"log"
+	"os"
 )
 
 type Configuration struct {
@@ -47,7 +47,7 @@ func Config() {
 	}
 
 	// Check for minimal configuration
-	if (configuration.Database.Database == "" || configuration.Database.Password == "" || configuration.Database.Username == "" || configuration.Database.Hostname == "") {
+	if configuration.Database.Database == "" || configuration.Database.Password == "" || configuration.Database.Username == "" || configuration.Database.Hostname == "" {
 		log.Println("Please check the config.json. More info available here: https://github.com/pitwch/go-proffix-geocode#konfiguration")
 		os.Exit(1)
 	}

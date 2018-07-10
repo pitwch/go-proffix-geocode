@@ -1,14 +1,14 @@
 package geocode
 
 import (
-	"testing"
-	"github.com/pitwch/go-proffix-geocode/adresses"
 	"database/sql"
+	"github.com/pitwch/go-proffix-geocode/adresses"
+	"testing"
 )
 
 func TestGeocodeAdressesGoogle(t *testing.T) {
 	testaddresses := []Adresses.Adressstruct{
-		Adresses.Adressstruct{
+		{
 			1,
 			sql.NullString{"Murgtalstrasse 20", true},
 			sql.NullString{"9542", true},
