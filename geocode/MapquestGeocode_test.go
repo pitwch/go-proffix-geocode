@@ -13,7 +13,7 @@ func TestReplaceUmlauts(t *testing.T) {
 }
 
 func TestGeocodeMapquest(t *testing.T) {
-	testaddresses := []Adresses.Adressstruct{
+	testaddresses := []Adresses.Adresses{
 		{
 			1,
 			sql.NullString{"Murgtalstrasse 20", true},
