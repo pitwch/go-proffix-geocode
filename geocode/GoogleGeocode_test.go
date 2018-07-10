@@ -7,7 +7,7 @@ import (
 )
 
 func TestGeocodeAdressesGoogle(t *testing.T) {
-	testaddresses := []Adresses.Adresses{
+	testaddresses := []Adresses.Adressstruct {
 		{
 			1,
 			sql.NullString{"Murgtalstrasse 20", true},
