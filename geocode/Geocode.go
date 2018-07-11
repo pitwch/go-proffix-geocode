@@ -2,12 +2,11 @@ package geocode
 
 import (
 	"github.com/pitwch/go-proffix-geocode/adresses"
-	"log"
 	"github.com/spf13/cast"
+	"log"
 )
 
 type Settings struct {
-
 	UseGeocoder    string
 	MapQuestAPIKey string
 	GoogleAPIKey   string
@@ -15,18 +14,17 @@ type Settings struct {
 
 var settings Settings
 
-func SetSettings(s Settings){
+func SetSettings(s Settings) {
 	settings = s
 }
-func GeocodeAdresses (adresses []Adresses.Adresses){
+func GeocodeAdresses(adresses []Adresses.Adresses) {
 
 	var r []Adresses.Geocoded
 	var err error
 
-	if (settings.UseGeocoder == "Mapquest" || settings.UseGeocoder == "mapquest"){
+	if settings.UseGeocoder == "Mapquest" || settings.UseGeocoder == "mapquest" {
 		r = GeocodeAdressesMapquest(adresses)
-	} else
-	{
+	} else {
 		r = GeocodeAdressesGoogle(adresses)
 
 		if err != nil {
@@ -35,14 +33,14 @@ func GeocodeAdresses (adresses []Adresses.Adresses){
 
 	}
 
-	for _,y := range r {
-		adressnr,err := Adresses.UpdateEmptyAdresses(y)
+	for _, y := range r {
+		adressnr, err := Adresses.UpdateEmptyAdresses(y)
 
 		// If Error -> Log
 		if err != nil {
 			log.Println(err)
 		}
 
-		log.Println("Successfully geocoded PROFFIX AdressNr "+cast.ToString(adressnr))
+		log.Println("Successfully geocoded PROFFIX AdressNr " + cast.ToString(adressnr))
 	}
 }

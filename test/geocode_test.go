@@ -1,15 +1,15 @@
 package test
 
 import (
-	"testing"
-	"github.com/pitwch/go-proffix-geocode/adresses"
 	"database/sql"
+	"github.com/pitwch/go-proffix-geocode/adresses"
 	"github.com/pitwch/go-proffix-geocode/geocode"
+	"testing"
 )
 
 func TestGeocodeGoogle(t *testing.T) {
 	testaddresses := []Adresses.Adresses{
-		Adresses.Adresses{
+		{
 			1,
 			sql.NullString{"Murgtalstrasse 20", true},
 			sql.NullString{"9542", true},
@@ -24,7 +24,7 @@ func TestGeocodeGoogle(t *testing.T) {
 
 func TestGeocodeMapquest(t *testing.T) {
 	testaddresses := []Adresses.Adresses{
-		Adresses.Adresses{
+		{
 			1,
 			sql.NullString{"Murgtalstrasse 20", true},
 			sql.NullString{"9542", true},

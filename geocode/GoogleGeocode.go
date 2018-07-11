@@ -1,13 +1,11 @@
 package geocode
 
 import (
+	"github.com/kelvins/geocoder"
 	"github.com/pitwch/go-proffix-geocode/adresses"
 	"github.com/spf13/cast"
-	"github.com/kelvins/geocoder"
 	"log"
 )
-
-
 
 // Geocode PROFFIX Adressen with Google
 
@@ -18,11 +16,11 @@ func GeocodeAdressesGoogle(adresses []Adresses.Adresses) (g []Adresses.Geocoded)
 	geocoder.ApiKey = settings.GoogleAPIKey
 
 	for _, y := range adresses {
-	address := geocoder.Address{
-		Street:  y.Street.String,
-		City:    y.City.String,
-		Country: y.Country.String,
-	}
+		address := geocoder.Address{
+			Street:  y.Street.String,
+			City:    y.City.String,
+			Country: y.Country.String,
+		}
 
 		location, err := geocoder.Geocoding(address)
 

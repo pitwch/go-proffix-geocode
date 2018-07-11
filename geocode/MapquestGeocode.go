@@ -1,10 +1,10 @@
 package geocode
 
 import (
-	"github.com/pitwch/go-proffix-geocode/adresses"
 	"github.com/jasonwinn/geocoder"
-	"log"
+	"github.com/pitwch/go-proffix-geocode/adresses"
 	"github.com/spf13/cast"
+	"log"
 	"strings"
 )
 
@@ -31,8 +31,7 @@ func GeocodeAdressesMapquest(adresses []Adresses.Adresses) (g []Adresses.Geocode
 	x, err := geocoder.BatchGeocode(Temp)
 	if len(x) < 1 {
 		log.Println("All Adresses are already geocoded.")
-	} else if
-	(err != nil) {
+	} else if err != nil {
 		log.Println(err)
 	}
 

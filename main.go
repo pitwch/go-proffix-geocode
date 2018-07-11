@@ -1,13 +1,11 @@
 package main
 
 import (
-	"log"
+	"github.com/pitwch/go-proffix-geocode/adresses"
 	"github.com/pitwch/go-proffix-geocode/configuration"
 	"github.com/pitwch/go-proffix-geocode/geocode"
-	"github.com/pitwch/go-proffix-geocode/adresses"
+	"log"
 )
-
-
 
 func main() {
 
@@ -19,19 +17,13 @@ func main() {
 
 	if len(results) < 1 {
 		log.Println("All adresses are already geocoded")
-	} else if
-	err != nil {
+	} else if err != nil {
 		log.Println(err)
-
 
 	}
 
 	// Batch Geocode Adresses from PROFFIX
 
-
 	geocode.GeocodeAdresses(results)
 
 }
-
-
-

@@ -18,10 +18,11 @@ type Adresses struct {
 }
 
 type Geocoded struct {
-	Adressnr int
+	Adressnr  int
 	Longitude string
 	Latitude  string
 }
+
 var (
 	ErrNoResult = errors.New("No non-geocoded Adresses")
 )
@@ -45,7 +46,6 @@ func GetEmptyAdresses() ([]Adresses, error) {
 
 // Update just Long / Lat in PROFFIX Adresses
 func UpdateEmptyAdresses(g Geocoded) (adressnr int, err error) {
-
 
 	// Update the entity
 	_, err = database.SQL.Exec(`
